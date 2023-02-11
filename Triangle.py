@@ -1,14 +1,23 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jan 14 13:44:00 2016
-Updated Jan 21, 2018
+Updated Feb 10,2023
 
 The primary goal of this file is to demonstrate a simple python program to classify triangles
 
 @author: sheshendra desiboyina
 """
+from datetime import datetime
+
+
+def my_brand(homework_name):
+    print("==== Sheshendra Desiboyina ====")
+    print("==== Course 2023S-SSW567-A ==== ")
+    print("==== The name of the homework assignment: {} ==== ".format(homework_name))
+    print("==== Date and time: {} ==== ".format(datetime.datetime.now()))
 
 def classifyTriangle(a,b,c):
+
     """
     Your correct code goes here...  Fix the faulty logic below until the code passes all of 
     you test cases. 
@@ -25,7 +34,7 @@ def classifyTriangle(a,b,c):
       
       BEWARE: there may be a bug or two in this code
     """
-
+    my_brand("HW02a- Testing a legacy program and reporting on testing results")
     # require that the input values be >= 0 and <= 200
     if not (isinstance(a, int) and isinstance(b, int) and isinstance(c, int)):
         return 'InvalidInput'
