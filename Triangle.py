@@ -16,6 +16,7 @@ def my_brand(homework_name):
     print("==== The name of the homework assignment: {} ==== ".format(homework_name))
     print("==== Date and time: {} ==== ".format(datetime.datetime.now()))
 
+
 def classifyTriangle(a,b,c):
 
     """
@@ -34,7 +35,7 @@ def classifyTriangle(a,b,c):
       
       BEWARE: there may be a bug or two in this code
     """
-    my_brand("HW02a- Testing a legacy program and reporting on testing results")
+
     # require that the input values be >= 0 and <= 200
     if not (isinstance(a, int) and isinstance(b, int) and isinstance(c, int)):
         return 'InvalidInput'
@@ -55,3 +56,7 @@ def classifyTriangle(a,b,c):
         return 'NotATriangle'
     elif (a != b != c):
         return 'Scalene'
+
+
+if __name__ == '__main__':
+    my_brand("HW02a- Testing a legacy program and reporting on testing results")
